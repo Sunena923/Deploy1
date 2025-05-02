@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Tasks Combined</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        /* Task 1 - Table Styling */
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* Task 2 - Navigation Bars */
+        .navbar-vertical a,
+        .navbar-horizontal a {
+            display: block;
+            padding: 10px;
+            background-color: #eee;
+            text-decoration: none;
+            color: black;
+            border: 1px solid #ccc;
+            margin: 2px;
+        }
+        .navbar-horizontal a {
+            display: inline-block;
+        }
+
+        /* Task 3 - CSS Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header'
+                'menu main main right'
+                'footer footer footer footer';
+            grid-gap: 10px;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        .grid-container > div {
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .header { grid-area: header; }
+        .menu { grid-area: menu; }
+        .main { grid-area: main; }
+        .right { grid-area: right; }
+        .footer { grid-area: footer; }
+
+        /* Task 4 - Sidebar Buttons */
+        .sidebar-btns button {
+            padding: 10px;
+            margin: 5px;
+            width: 100px;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Task 5 - Profile Card */
+        .profile-card {
+            border: 1px solid #ccc;
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .profile-card img {
+            border-radius: 50%;
+            width: 100px;
+        }
+        .login-btn {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+        }
+
+        /* Task 6 - Styled Page */
+        .styled-page {
+            background-color: yellow;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .styled-page h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Task 1: CSS Table</h1>
+    <table>
+        <tr><th>SL</th><th>Name</th><th>Location</th></tr>
+        <tr><td>1</td><td>Alice</td><td>Delhi</td></tr>
+        <tr><td>2</td><td>Bob</td><td>Mumbai</td></tr>
+    </table>
+
+    <h1>Task 2: Navigation Bars</h1>
+    <div class="navbar-vertical">
+        <strong>Vertical Navigation Bar:</strong><br>
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+    </div>
+    <br>
+    <div class="navbar-horizontal">
+        <strong>Horizontal Navigation Bar:</strong><br>
+        <a href="#">Home</a>
+        <a href="#">Java</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+    </div>
+
+    <h1>Task 3: CSS Layout (Grid)</h1>
+    <div class="grid-container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="main">Main Content</div>
+        <div class="right">Right Sidebar</div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <h1>Task 4: Sidebar Buttons</h1>
+    <div class="sidebar-btns">
+        <button style="background-color: red;">Red</button>
+        <button style="background-color: green;">Green</button>
+        <button style="background-color: blue;">Blue</button>
+        <button style="background-color: gray;">Gray</button>
+    </div>
+
+    <h1>Task 5: Profile Card</h1>
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/100" alt="Profile Pic">
+        <h3>John Doe</h3>
+        <p>Email: john@example.com</p>
+        <button class="login-btn">Login</button>
+    </div>
+
+    <h1>Task 6: Styled Page</h1>
+    <div class="styled-page">
+        <h2>My first styled page</h2>
+        <p>Welcome to CSS styling practice! This is a basic example of using color and layout.</p>
+        <p><strong>Enjoy learning CSS!</strong></p>
+    </div>
+
+</body>
+</html>
